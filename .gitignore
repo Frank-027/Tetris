@@ -1,0 +1,21 @@
+# Virtuele omgeving (venv)
+venv/
+ENV/
+env/
+dist/
+build/
+
+# Python cache (versnelt het draaien, maar hoeft niet in Git)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS specifieke bestanden (irritant in een gedeelde repo)
+.DS_Store
+
+# Lokale data (je highscores wil je misschien niet delen met iedereen)
+highscores.json
+
+# VS Code of andere editor instellingen
+.vscode/
+.idea/
