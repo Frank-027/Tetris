@@ -512,6 +512,14 @@ def main():
             elif speed_change == "NORMAL": 
                 current_fall_speed = max(100, 500 - (level - 1) * 50)
 
+            # snelheid aanpassen op basis van level
+            level_speed = max(100, 500 - (level - 1) * 50)
+            
+            if speed_change == "FAST":
+                current_fall_speed = fast_speed
+            else:
+                current_fall_speed = level_speed
+
             # Zwaartekracht update
             if fall_time > current_fall_speed:
                 # Hier gebruiken we nu overal 'lines_total'
